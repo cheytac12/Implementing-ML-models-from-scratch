@@ -35,9 +35,6 @@ for i in range(epochs):
     print(f"Epoch: {i}")
     m,b = gradient_descent(m,b,data,learning_rate)
     
-print(m,b)
-
-
 plt.scatter(data.YearsExperience,data.Salary,color="black")
 plt.plot(list(range(1,11)),[m * x + b for x in range(1,11)],color="red")
 plt.show()
